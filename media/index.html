@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src {{cspSource}}; script-src 'nonce-{{nonce}}';">
+  <link rel="stylesheet" href="{{media}}/style.css">
+  <title>BizTalk Map Viewer</title>
+</head>
+<body>
+  <header><div><span class="eyebrow">BIZTALK MAP</span><h1 id="title">Loading…</h1></div><div class="stats" id="stats"></div></header>
+  <nav><select id="page"></select><input id="search" type="search" placeholder="Filter paths, constants, scripts…"><button id="fit">Fit view</button></nav>
+  <main>
+    <section class="schemas"><article><span>SOURCE</span><strong id="sourceRoot">—</strong><small id="sourceRef"></small></article><i>→</i><article><span>TARGET</span><strong id="targetRoot">—</strong><small id="targetRef"></small></article></section>
+    <section id="error" class="error" hidden></section>
+    <section id="map" class="map"></section>
+  </main>
+  <script nonce="{{nonce}}" src="{{media}}/main.js"></script>
+</body>
+</html>
