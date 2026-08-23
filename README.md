@@ -1,5 +1,7 @@
 # BizTalk Map Viewer
 
+[![Source on GitHub](https://img.shields.io/badge/source-GitHub-181717?logo=github)](https://github.com/lambogenius/biztalk-map-viewer-vscode)
+
 A local-first VS Code custom editor for BizTalk `.btm` map files.
 
 ## Features
@@ -12,6 +14,8 @@ A local-first VS Code custom editor for BizTalk `.btm` map files.
 - Updates when the underlying text document changes.
 
 ## Install locally
+
+Source code: [GitHub repository](https://github.com/lambogenius/biztalk-map-viewer-vscode)
 
 ```powershell
 npm run package:vsix
